@@ -3157,7 +3157,8 @@ section.about div.about-content div.about-text p {
 }
 section.about div.about-content ul.about-us {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
     gap: 2rem;
     max-width: 56rem;
     margin-inline: auto;
@@ -3167,6 +3168,34 @@ section.about div.about-content ul.about-us li {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+section.about div.about-content ul.about-us li:nth-of-type(1) {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+}
+section.about div.about-content ul.about-us li:nth-of-type(2) {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+}
+section.about div.about-content ul.about-us li:nth-of-type(3) {
+    grid-column: 5 / span 2;
+    grid-row: 2 / span 2;
+}
+section.about div.about-content ul.about-us li:nth-of-type(4) {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+}
+section.about div.about-content ul.about-us li:nth-of-type(5) {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 2;
+}
+section.about div.about-content ul.about-us li:nth-of-type(6) {
+    grid-column: 3 / span 2;
+    grid-row: 5 / span 2;
+}
+section.about div.about-content ul.about-us li:nth-of-type(7) {
+    grid-column: 5 / span 2;
+    grid-row: 4 / span 2;
 }
 section.about div.about-content ul.about-us li div {
     box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
